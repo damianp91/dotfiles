@@ -253,4 +253,4 @@ exec --no-startup-id bash -c 'while true; do ~/.scripts/random_background.sh; sl
 exec --no-startup-id caffeine
 
 # Polybar lauch script
-exec_always --no-startup-id ~/.config/Polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
