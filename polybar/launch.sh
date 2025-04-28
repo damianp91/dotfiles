@@ -11,6 +11,6 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 # Launch bar1 and bar2
 echo "---" | tee -a /tmp/polybar1.log
-polybar example -c ~/.config/Polybar/config.ini 2>&1 | tee -a /tmp/polybar.log & disown
+polybar example -c ~/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar.log & disown
 
 echo "Bars launched..."
