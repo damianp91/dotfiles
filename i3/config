@@ -204,9 +204,9 @@ exec --no-startup-id xset s 900 60
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --image="/home/damianp/Imágenes/Screen_bloked/wallhaven-76g17o.png"
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i "/home/damianp/Imágenes/Screen_bloked/wallhaven-1.png"
 
-bindsym $mod+shift+b exec i3lock -i "/home/damianp/Imágenes/Screen_bloked/wallhaven-oxz9v7.png"
+bindsym $mod+shift+b exec i3lock -i "/home/damianp/Imágenes/Screen_bloked/wallhaven-1.png" --tiling
 
 # Active somethings of the cinnamon
 exec --no-startup-id cinnamon-settings-daemon
@@ -224,7 +224,7 @@ default_border pixel 4
 for_window [class=".*"] border pixel 3
 
 # Random picture for desktop 
-exec --no-startup-id bash -c 'while true; do ~/.scripts/random_background.sh; sleep 1800; done'
+exec --no-startup-id bash -c 'while true; do ~/.scripts/random_background.sh; sleep 1900; done'
 
 # Active window while reproducing a video
 exec --no-startup-id caffeine &
