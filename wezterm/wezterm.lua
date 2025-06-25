@@ -9,6 +9,7 @@ config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.9
 config.enable_scroll_bar =  false
+config.adjust_window_size_when_changing_font_size = false
 config.window_padding = {
   left = 0,
   right = 0,
