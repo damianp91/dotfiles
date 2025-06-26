@@ -52,7 +52,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec wezterm
-for_window [class="wezterm"] floating enable, resize set 1680 920, move position center
+for_window [class="wezterm"] floating enable, resize set 1680 900, move position center
 
 # kill focused window
 bindsym $mod+Shift+q kill
