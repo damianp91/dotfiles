@@ -1,0 +1,21 @@
+
+# General view
+set preview
+set previewer ~/.config/lf/preview.sh
+set icons true
+set scrolloff 5
+set drawbox true
+set hidden true
+
+# Fast navigation
+map gh cd ~
+map gd cd ~/Descargas
+map gg cd ~/Documentos
+
+# Open file
+map <enter> open
+map i shell nvim $f
+map E shell $EDITOR $f
+
+# Delete file
+map x delete
