@@ -2,14 +2,13 @@ local wezterm = require('wezterm')
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font('VictorMono Nerd Font Mono')
+-- config.font = wezterm.font(
+--   "VictorMono Nerd Font Mono,VictorMono NFM"
+-- )
 config.font_size = 15
 config.color_scheme = "GruvboxDarkHard"
 config.colors = {
     background = "#000000",
-    -- cursor_bg = "#999999",
-    -- cursor_fg = "#1a1a1e",
-    -- cursor_border = "#999999",
 }
 -- config.front_end = "WebGpu"
 config.prefer_egl = true
