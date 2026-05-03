@@ -11,6 +11,7 @@
 
 # For use Alt Mod1 or Mod4 Windows button
 set $mod Mod4
+set $wallpaper "/home/damianp/Imágenes/Screen_bloked/wallhaven-1.png"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -60,6 +61,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 # A more modern dmenu replacement is rofi:
 bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+# Alternative: bindsym $mod+d exec "rofi -modi drun,run -show drun"
 
 # change focus
 bindsym $mod+h focus left
@@ -187,7 +189,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Color for each windown in the screen
+# Color for each window in the screen
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
@@ -197,16 +199,16 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
 
-# Block sreen
+# Block screen
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
 exec --no-startup-id xset s 900 60
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i "/home/damianp/Imágenes/Screen_bloked/wallhaven-1.png"
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -i "$wallpaper"
 
-bindsym $mod+shift+b exec i3lock -i "/home/damianp/Imágenes/Screen_bloked/wallhaven-1.png" --tiling
+bindsym $mod+shift+b exec i3lock -i "$wallpaper" --tiling
 
 # Active somethings of the cinnamon
 exec --no-startup-id cinnamon-settings-daemon
@@ -217,17 +219,17 @@ gaps outer 4
 gaps inner 4
 smart_gaps on
 
-# Defoult border init
+# Default border init
 default_border pixel 4
 
-# Settings all windows border 
+# Set all windows border 
 for_window [class=".*"] border pixel 3
 
 # Random picture for desktop 
 exec --no-startup-id bash -c 'while true; do ~/.scripts/random_background.sh; sleep 1900; done'
 
 # Active window while reproducing a video
-exec --no-startup-id caffeine &
+exec --no-startup-id caffeine
 
 # Polybar lauch script
 exec_always --no-startup-id ~/.config/polybar/launch.sh

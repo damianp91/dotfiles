@@ -7,7 +7,7 @@ set scrolloff 5
 set drawbox true
 set hidden true
 
-# Fast navigation
+# Quick navigation
 map gh cd ~
 map gd cd ~/Descargas
 map gg cd ~/Documentos
@@ -19,3 +19,6 @@ map E shell $EDITOR $f
 
 # Delete file
 map x delete
+
+# Trash file (safer than delete)
+map X trash
