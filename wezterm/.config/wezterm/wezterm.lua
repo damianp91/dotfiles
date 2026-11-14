@@ -2,7 +2,7 @@ local wezterm = require('wezterm')
 
 local config = wezterm.config_builder()
 
-config.font = wezterm.font("VictorMono Nerd Font Mono,VictorMono NFM")
+-- config.font = wezterm.font("VictorMono Nerd Font Mono,VictorMono NFM")
 config.font_size = 15
 config.color_scheme = "GruvboxDarkHard"
 config.colors = {
@@ -12,7 +12,7 @@ config.colors = {
 config.prefer_egl = true
 config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = true
-config.window_decorations = "RESIZE"
+-- config.window_decorations = "RESIZE"
 config.automatically_reload_config = true
 config.window_background_opacity = 0.7
 config.enable_scroll_bar =  false
