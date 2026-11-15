@@ -1,0 +1,55 @@
+* {
+    font-family: "VictorMono Nerd Font";
+    font-size: 12px;
+}
+
+window {
+    background-color: #1d2021;
+    border: 1px solid #d79921;
+    border-radius: 18px;
+}
+
+#input {
+    background-color: #282828;
+    color: #ebdbb2;
+    border: 1px solid #504945;
+    border-radius: 18px;
+    padding: 10px;
+    margin: 12px;
+}
+
+#inner-box {
+    margin: 5px;
+}
+
+#outer-box {
+    margin: 5px;
+}
+
+#scroll {
+    margin: 5px;
+}
+
+#entry {
+    padding: 9px;
+    margin: 3px;
+    border-radius: 18px;
+}
+
+#entry:selected {
+    background-color: #504945;
+    color: #fabd2f;
+}
+
+#text {
+    color: #ebdbb2;
+    margin-left: 10px;
+}
+
+#text:selected {
+    color: #fabd2f;
+}
+
+#img {
+    margin-right: 6px;
+}
