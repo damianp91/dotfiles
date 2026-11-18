@@ -19,20 +19,20 @@ window {
 }
 
 #inner-box {
-    margin: 5px;
+    margin: 4px;
 }
 
 #outer-box {
-    margin: 5px;
+    margin: 4px;
 }
 
 #scroll {
-    margin: 5px;
+    margin: 4px;
 }
 
 #entry {
-    padding: 9px;
-    margin: 3px;
+    padding: 8px;
+    margin: 2px;
     border-radius: 18px;
 }
 
