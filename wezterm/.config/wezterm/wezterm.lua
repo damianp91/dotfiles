@@ -2,7 +2,7 @@ local wezterm = require('wezterm')
 
 local config = wezterm.config_builder()
 
--- config.font = wezterm.font("VictorMono Nerd Font Mono,VictorMono NFM")
+config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 15
 config.color_scheme = "GruvboxDarkHard"
 config.colors = {
