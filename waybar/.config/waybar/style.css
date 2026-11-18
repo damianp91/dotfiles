@@ -55,7 +55,7 @@ window#waybar {
 #battery,
 #clock,
 #tray {
-    padding: 0 9px;
+    padding: 0 8px;
     margin: 4px 2px;
 }
 

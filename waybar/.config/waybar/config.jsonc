@@ -1,7 +1,7 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 34,
+    "height": 32,
     "spacing": 2,
     "margin-top": 4,
     "margin-left": 4,
@@ -91,7 +91,7 @@
     "mpris": {
         "format": "{player_icon} {dynamic}",
         "format-paused": "󰏤 {dynamic}",
-        "max-length": 22,
+        "max-length": 20,
         "player-icons": {
             "default": "󰐊",
             "firefox": "󰈹",
@@ -137,7 +137,7 @@
     },
 
     "tray": {
-        "icon-size": 16,
-        "spacing": 10
+        "icon-size": 14,
+        "spacing": 8
     }
 }
