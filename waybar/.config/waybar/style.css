@@ -32,8 +32,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #d79921;
-    background-color: #504945;
+    color: #ebdbb2;
+    background-color: #98971a;
     transition: all 200ms ease-in-out;
 }
 
