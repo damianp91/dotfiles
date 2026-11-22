@@ -55,8 +55,11 @@ hl.config({
 })
 
 -- Smooth animation profile
-hl.curve("smooth", { type = "bezier", points = { { 0.45, 0 }, { 0.15, 1 }, }, })
-hl.curve("smoothInOut", { type = "bezier", points = { { 0.65, 0 }, { 0.35, 1 }, }, })
+hl.curve("smooth",
+  { type = "bezier", points = { { 0.53, -0.17 }, { 0.52, 0.98 }, }, })
+hl.curve("smoothInOut",
+  { type = "bezier", points = { { 0.57, 0.1 }, { 0.56, 1.25 }, }, })
+
 hl.animation({
   leaf = "global",
   enabled = true,
@@ -90,7 +93,7 @@ hl.animation({
   leaf = "windowsOut",
   enabled = true,
   speed = 4,
-  bezier = "smooth",
+  bezier = "smoothInOut",
   style = "popin 90%",
 })
 
@@ -105,7 +108,7 @@ hl.animation({
   leaf = "fadeOut",
   enabled = true,
   speed = 4,
-  bezier = "smooth",
+  bezier = "smoothInOut",
 })
 
 hl.animation({
@@ -134,7 +137,7 @@ hl.animation({
   leaf = "layersOut",
   enabled = true,
   speed = 4,
-  bezier = "smooth",
+  bezier = "smoothInOut",
   style = "fade",
 })
 
@@ -149,7 +152,7 @@ hl.animation({
   leaf = "fadeLayersOut",
   enabled = true,
   speed = 4,
-  bezier = "smooth",
+  bezier = "smoothInOut",
 })
 
 hl.animation({
@@ -164,7 +167,7 @@ hl.animation({
   leaf = "workspacesIn",
   enabled = true,
   speed = 4,
-  bezier = "smoothInOut",
+  bezier = "smooth",
   style = "slide",
 })
 
@@ -177,24 +180,6 @@ hl.animation({
 })
 
 hl.animation({ leaf = "zoomFactor", enabled = true, speed = 5, bezier = "smooth", })
-
--- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
--- "Smart gaps" / "No gaps when only"
--- uncomment all if you wish to use that.
--- hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0, gaps_in = 0 })
--- hl.workspace_rule({ workspace = "f[1]",   gaps_out = 0, gaps_in = 0 })
--- hl.window_rule({
---     name  = "no-gaps-wtv1",
---     match = { float = false, workspace = "w[tv1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
--- hl.window_rule({
---     name  = "no-gaps-f1",
---     match = { float = false, workspace = "f[1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
 
 hl.config({
   dwindle = {
